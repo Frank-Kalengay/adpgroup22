@@ -18,32 +18,29 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class UniversityTest {
     
-    public UniversityTest() {
-    }
-
-    @org.junit.jupiter.api.BeforeAll
-    public static void setUpClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.AfterAll
-    public static void tearDownClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.BeforeEach
-    public void setUp() throws Exception {
-    }
-
-    @org.junit.jupiter.api.AfterEach
-    public void tearDown() throws Exception {
-    }
+   private University Student1;
+   private University Student2;
+   private University Student3;
+   
+   
     
-    @BeforeAll
+    @BeforeEach
+    
+    public void setUp() 
+    {
+        Student1= new University ();
+        Student2=Student3;
+        }
     
 
-    @org.junit.jupiter.api.Test
-    public void testSomeMethod() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    
+    public void testEquality()
+    {
+         assertEquals(Student3,Student2);
+    }
+     public void testIdentity()
+    {
+         assertEquals(Student3,Student2);
     }
     
 }
